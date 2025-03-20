@@ -1,0 +1,127 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Amatic SC';
+}
+*
+{
+    box-sizing: border-box;
+}
+a
+{
+    text-decoration: none;
+}
+.pizza-image
+{
+    background: url('Pizza.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height:90vh;
+    min-width: 90vw;
+}
+.fixed
+{
+    position: fixed;
+}
+.absolute
+{
+    position: absolute;
+}
+.black-background
+{
+    background-color: black;
+    color: white;
+    opacity: 0.7;
+}
+.black-background:hover
+{
+    opacity: 1;
+}
+.black-background a,p,h1,h2,h3,h4,h5,h6
+{
+    color: white;
+}
+.black-background a:hover
+{
+    background-color:sandybrown;
+}
+.black
+{
+    background-color: black;
+}
+.width-100
+{
+    width: 100%;
+}
+.low-opacity
+{
+    opacity: 0.3;
+}
+.medium-opacity
+{
+    opacity: 0.5;
+}
+.font-12 a,p
+{
+    font-size: 12px;
+}
+.font-18 a,p
+{
+    font-size: 18px;
+}
+.font-24 a,p
+{
+    font-size: 24px;
+}
+.font-36 a,p
+{
+    font-size: 36px;
+}
+.font-48 a,p
+{
+    font-size: 48px;
+}
+.margin-10 a,p
+{
+    margin: 10px;
+}
+.margin-15 a,p
+{
+    margin: 15px;
+}
+.padding-10 a
+{
+    padding: 10px;
+}
+.center
+{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.center-absolute
+{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.button
+{
+    cursor: pointer;
+    padding: 8px 16px;
+    overflow: hidden;
+}
+.button-group a
+{
+    cursor: pointer;
+    padding: 8px 16px;
+    overflow: hidden;
+    vertical-align: middle;
+    color: white;
+    opacity: 1;
+}
+.button-group
+{
+    overflow: hidden;
+}
