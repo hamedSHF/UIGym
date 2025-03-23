@@ -9,22 +9,101 @@
 </head>
 <body>
     <header class="pizza-image">
-        <nav class="black-background width-100 font-36 margin-10 button-group fixed">
+        <nav class="black-background width-100 font-36 margin-10 button-group fixed z-1">
             <a href="#home">Home</a>
             <a href="#menu">Menu</a>
             <a href="#about">About</a>
             <a href="#contact">Contact</a>
         </nav>
-        <div class="black font-48 center padding-10 absolute center-absolute">
+        <div class="font-60 center padding-10 absolute center-absolute">
             <p>Thin Crust</p>
             <p>Pizza</p>
         </div>
     </header>
-    <main class="black">
-        <p class="center font-36">The MENU</h3>
-        <h3 class="center">The MENU</h3>
-        <h3 class="center">The MENU</h3>
-        <h3 class="center">The MENU</h3>
+    <main class="black padding-64">
+        <p class="center font-60">The MENU</p>
+        <div class="border-white center-div">
+                <div class="flex-row flex-row-grow" id="menubuttons">
+                    <a class="red-a-button red-button" onclick="selectMenu(this,'pizza')">Pizza</a>
+                    <a class="red-a-button" onclick="selectMenu(this,'salad')">Salad</a>
+                    <a class="red-a-button" onclick="selectMenu(this,'starter')">Starter</a>
+                </div>
+                <div class="flex-column white select-div padding-64" id="pizza">
+                    <div>
+                        <p class="font-48 margin-10"><b>Margaretha</b><span class="gray-span float-right">$12.50</span></p>
+                        <p class="font-36 margin-10">Fresh tomatoes, fresh mozzarella, fresh basil</p>
+                    </div>
+                    <hr>
+                    <div>
+                        <p class="font-48 margin-10"><b>Formaggio</b><span class="gray-span float-right">$15.50</span></p>
+                        <p class="font-36 margin-10">Four cheeses (mozzarella, parmesan, pecorino, jarlsberg)</p>
+                    </div>
+                <hr>
+                <div>
+                    <p class="font-48 margin-10"><b>Pineapple'o'clock</b><span class="gray-span float-right">$16.50</span></p>
+                    <p class="font-36 margin-10">Fresh tomatoes, mozzarella, fresh pineapple, bacon, fresh basil</p>
+                </div>
+                <hr>
+                <div>
+                    <p class="font-48 margin-10"><b>MEAT TOWN</b><span class="red-background">HOT!</span><span class="gray-span float-right">$20.00</span></p>
+                    <p class="font-36 margin-10">Fresh tomatoes, mozzarella, hot pepporoni, hot sausage, beef, chicken</p>
+                </div>
+                <hr>
+                <div>
+                    <p class="font-48 margin-10"><b>PARMA</b><span class="gray-background">NEW</span><span class="gray-span float-right">$21.50</span></p>
+                    <p class="font-36 margin-10">Fresh tomatoes, mozzarella, parma, bacon, fresh arugula</p>
+                </div>
+                </div>
+            <div class="flex-column white select-div padding-64" style="display: none;" id="salad">
+                <div>
+                    <p class="font-48 margin-10"><b>Lasagna</b><span class="gray-background">POPULAR</span><span class="gray-span float-right">$13.50</span></p>
+                    <p class="font-36 margin-10">Special sauce, mozzarella, parmesan, ground beef</p>
+                </div>
+            </div>
+            <div class="flex-column white select-div padding-64" style="display: none;" id="starter">
+                <div>
+                    <p class="font-48 margin-10"><b>TODAY'S SOUP</b><span class="gray-background">SEASONAL</span><span class="gray-span float-right">$8.50</span></p>
+                    <p class="font-36 margin-10">Ask the waiter</p>
+                </div>
+            </div>
+        </div>
     </main>
+    <div class="light-red-background padding-64 grayscale" id="about">
+        <p class="center font-60">About</p>
+        <div class="center-div">
+            <p class="font-24">The Pizza Restaurant was founded in blabla by Mr. Italiano in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <div>
+                <p class="font-24"><b>THE CHEF?</b> MR. ITALIANO HIMSELF <img src="chef.jpg" alt="Chef Italiano" class="image-circle float-right"></p>
+                <p class="font-24">WE ARE PROUD OF OUR INTERIORS. </p>
+            </div>
+            <img class="image" src="res.jpg" alt="Restaurant Interior"/>
+            <p class="font-36">OPENING HOURS</p>
+            <div class="flex-column width-half">
+                <p class="font-24">MON & TUE CLOSED<span class="float-right">FRIDAY 10:00-12:00</span></p>
+                <p class="font-24">WEDNESDAY 10:00 - 24:00<span class="float-right">SATURDAY 10:00 - 23:00</span></p>
+                <p class="font-24">THURSDAY 10:00 - 24:00<span class="float-right">SUNDAY CLOSED</span></p>
+            </div>
+        </div>
+    </div>
+    <img src="map.jpg" alt="Map" class="image grayscale"/>
+    <div class="gray padding-64" id="contact">
+        <div class="center-div">
+        <p class="center font-60">Contact</p>
+        <p class="font-36">Find us at some address at some place or call us at 05050515-122330</p>
+        <p class="font-36"><span class="black-background">FYI! </span> offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste</p>
+        <p class="font-48"><b>Reserve</b> a table, ask for today's special or just send us a message:</p>
+        <form method="post" class="flex-column form flex-gap">
+            <input type="text" placeholder="Name" required>
+            <input type="number" placeholder="How Many People" required>
+            <input type="datetime-local" value="2025-12-31T12:00">
+            <input type="text" placeholder="Message \ Special Request">
+            <button type="submit" class="button">Send Message</button>
+        </form>
+    </div>
+    </div>
+    <div class="black padding-64">
+        <p class="font-60 center">Powered by Nobody</p>
+    </div>
+    <script src="Script.js"></script>
 </body>
 </html>

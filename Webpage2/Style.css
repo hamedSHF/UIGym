@@ -12,6 +12,22 @@ a
 {
     text-decoration: none;
 }
+hr
+{
+    border:0;
+    border-top: 1px solid #eee;
+    margin: 20px 20px;
+}
+input
+{
+    font: inherit;
+    font-size: 24px;
+}
+button
+{
+    font:inherit;
+    font-size: 24px;;
+}
 .pizza-image
 {
     background: url('Pizza.jpg');
@@ -23,6 +39,10 @@ a
 .fixed
 {
     position: fixed;
+}
+.z-1
+{
+    z-index: 1;
 }
 .absolute
 {
@@ -46,9 +66,21 @@ a
 {
     background-color:sandybrown;
 }
+.black-foreground
+{
+    color:black;
+}
 .black
 {
     background-color: black;
+}
+.white
+{
+    background-color: white;
+}
+.white > div > p
+{
+    color: black;
 }
 .width-100
 {
@@ -62,37 +94,61 @@ a
 {
     opacity: 0.5;
 }
-.font-12 a,p
+a.font-12 ,p.font-12
 {
     font-size: 12px;
 }
-.font-18 a,p
+a.font-18 ,p.font-18
 {
     font-size: 18px;
 }
-.font-24 a,p
+a.font-24 ,p.font-24
 {
     font-size: 24px;
 }
-.font-36 a,p
+a.font-36 ,p.font-36
 {
     font-size: 36px;
 }
-.font-48 a,p
+.font-36 > a
+{
+    font-size: 36px;
+}
+a.font-48 ,p.font-48
 {
     font-size: 48px;
 }
-.margin-10 a,p
+a.font-60,p.font-60
+{
+    font-size: 60px;
+}
+.font-60 > p
+{
+    font-size: 60px;
+}
+a.font-72,p.font-72
+{
+    font-size: 72px;
+}
+a.margin-10 ,p.margin-10
 {
     margin: 10px;
 }
-.margin-15 a,p
+a.margin-15 ,p.margin-15
 {
     margin: 15px;
+}
+a.margin-36,p.margin-36
+{
+    margin: 36px;
 }
 .padding-10 a
 {
     padding: 10px;
+}
+.padding-64
+{
+    padding: 64px;
 }
 .center
 {
@@ -124,4 +180,120 @@ a
 .button-group
 {
     overflow: hidden;
+}
+.border-white
+{
+    border: white 1px solid;
+}
+.flex-row
+{
+    display: flex;
+    flex-direction: row;
+}
+.flex-column
+{
+    display: flex;
+    flex-direction: column;
+}
+.flex-gap
+{
+    gap: 10px;
+}
+.flex-row-grow > *
+{
+    flex-grow: 1;
+}
+.red-a-button
+{
+    color:white;
+    font-size: 36px;
+    text-align: center;
+}
+.red-a-button:hover
+{
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+.gray-span
+{
+    background-color: gray;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+.float-left
+{
+    float: left;
+}
+.float-right
+{
+    float: right;
+}
+.select-div > div
+{
+    background-color: white;
+}
+.select-div > div:hover
+{
+    background-color: chocolate;
+}
+.center-div
+{
+    max-width: 980px;
+    margin: auto;
+}
+.red-background
+{
+    background-color: red;
+    color: white;
+    opacity: 0.7;
+    padding: 2px;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+.light-red-background
+{
+    background-color: #f44336!important;
+}
+.gray
+{
+    background-color: gray
+}
+.red-button
+{
+    background-color: red;;
+}
+.gray-background
+{
+    background-color: gray;
+    color: black;
+    padding: 2px;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+.none-display
+{
+    display: none;
+}
+.image-circle
+{
+    width: 150px;
+    border-radius: 50%;
+}
+.image
+{
+    width: 100%;
+}
+.grayscale
+{
+    filter: grayscale(75%);
+}
+.width-half
+{
+    width: 50%;
+}
+.form > input
+{
+    padding: 20px;
 }
